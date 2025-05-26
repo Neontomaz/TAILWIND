@@ -10,7 +10,9 @@ app.get('/', (req, res) => {
 })
 
 app.get('/sistema', (req,res) =>{
-    res.sendFile("C:/Users/CARLOS/Desktop/TAILWIND/public/static.html")
+    res.sendFile(path.join(__dirname, "public", "static.html")); 
+    // Usa o caminho relativo
+
 })
 
 app.listen(3000, () =>{

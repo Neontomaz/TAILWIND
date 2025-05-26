@@ -6,6 +6,16 @@
     <title>PAGINA MAIN</title>
 </head>
 <body>
-    {{{}}}
+
+
+
+    <button id="newbtn">NEW OS</button>
+
+    <script>
+    document.getElementById("newbtn").addEventListener("click", () => {
+    window.location.href = "/public/static.html"; // Redireciona para a rota Express
+});
+
+    </script>
 </body>
 </html>
